@@ -11,9 +11,9 @@ import UIKit
 final class WhackSlot: SKNode {
 
 	// MARK: - Properties
-	private var charNode: SKSpriteNode!
-	private var isVisible = false
-	private var isHit = false
+	var charNode: SKSpriteNode!
+	private(set) var isVisible = false
+	private(set) var isHit = false
 
 	// MARK: - Slot configuration
 	func configure(at position: CGPoint) {
@@ -38,7 +38,8 @@ final class WhackSlot: SKNode {
 	// MARK: - Game Logic
 	func show(hideTime: Double) {
 		if isVisible { return }
-
+		charNode.xScale = 1
+		charNode.yScale = 1
 		charNode.run(SKAction.moveBy(x: 0, y: 80, duration: 0.05))
 		isVisible = true
 		isHit = false
@@ -61,5 +62,14 @@ final class WhackSlot: SKNode {
 
 		charNode.run(SKAction.moveBy(x: 0, y: -80, duration: 0.05))
 		isVisible = false
+	}
+
+	func hit() {
+		isHit = true
+
+		let delay = SKAction.wait(forDuration: 0.25)
+		let hide = SKAction.moveBy(x: 0, y: -80, duration: 0.5)
+		let notVisible = SKAction.run { [unowned self] in self.isVisible = false }
+		charNode.run(SKAction.sequence([delay, hide, notVisible]))
 	}
 }

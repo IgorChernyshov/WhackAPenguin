@@ -14,6 +14,8 @@
 		D61427BA26A0CE9700918468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61427B826A0CE9700918468 /* Main.storyboard */; };
 		D61427BC26A0CE9900918468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61427BB26A0CE9900918468 /* Assets.xcassets */; };
 		D61427C626A0D12A00918468 /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61427C526A0D12A00918468 /* WhackSlot.swift */; };
+		D6BA27DB26A1EDDA0066903D /* whackBad.caf in Resources */ = {isa = PBXBuildFile; fileRef = D6BA27D926A1EDDA0066903D /* whackBad.caf */; };
+		D6BA27DC26A1EDDA0066903D /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = D6BA27DA26A1EDDA0066903D /* whack.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D61427BB26A0CE9900918468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D61427BD26A0CE9900918468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D61427C526A0D12A00918468 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
+		D6BA27D926A1EDDA0066903D /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
+		D6BA27DA26A1EDDA0066903D /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				D61427B826A0CE9700918468 /* Main.storyboard */,
 				D61427BB26A0CE9900918468 /* Assets.xcassets */,
 				D61427BD26A0CE9900918468 /* Info.plist */,
+				D6BA27DA26A1EDDA0066903D /* whack.caf */,
+				D6BA27D926A1EDDA0066903D /* whackBad.caf */,
 			);
 			path = WhackAPenguin;
 			sourceTree = "<group>";
@@ -128,6 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D61427BA26A0CE9700918468 /* Main.storyboard in Resources */,
+				D6BA27DC26A1EDDA0066903D /* whack.caf in Resources */,
+				D6BA27DB26A1EDDA0066903D /* whackBad.caf in Resources */,
 				D61427B126A0CE9700918468 /* GameScene.sks in Resources */,
 				D61427BC26A0CE9900918468 /* Assets.xcassets in Resources */,
 			);
